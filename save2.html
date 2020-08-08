@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <title>LK</title>
+    <link rel="stylesheet" href="css/save.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container-fluid d-flex flex-wrap col-12 px-0 mx-0">
+        <div class="col-6 px-0">
+          <canvas id="canvas"></canvas>
+        </div>
+        <div
+          class="col-6 px-0 second-col container d-flex align-items-center justify-content-center"
+        >
+          <div class="jumbotron bg-darker text-white col-lg-8 py-3">
+            <p class="question">
+              Phew! That was close. We see Lord Kelvin in a shuttle that is
+              going in a very high speed. We need to stop the shuttle.
+            </p>
+            <p class="question">
+                Find the magnitude of momentum needed to stop the space shuttle and redeem Lord Kelvin from the uncontrollable space shuttle! <br>
+                Weight of the shuttle= 4410 N ,Weight of Lord kelvin= 637 N, g= 9.8 m/s ,Speed of shuttle= 2 x 10<sup>4</sup> m/s. ( These values were measured on Earth)
+                
+            </p>
+            <div class="form-group">
+              <label class="font-weight-bold text-white">Answer:</label>
+              <input type="text" id="answer" class="form-control" />
+              
+              <button class="btn btn-light btn-lg mt-3 save-button">
+                Submit
+              </button>
+            </div>
+            <a href="#" data-toggle="modal" data-target="#exampleModal"
+              >How to submit answers
+            </a>
+            <!--<p class="hint text-white">
+              Hint On Our Instagram Page
+              <a href="https://instagram.com/licetpattarai?igshid=4erx77jt6bz0"
+                >@licetpattarai</a
+              >
+            </p> -->
+            <big id="error" style="color: antiquewhite;"></big>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              How to submit answers!
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            1) Use '^' to mention power terms. Example: 2^8. <br> 2) Use '*' to
+            specify multiplication. <br> 3)Leave a blank space in between the first
+            term and the power term. Example 456 * 2^7 <br> 4) PLEASE DON'T ENTER THE UNIT. <br>
+            5) IF YOU HAVE DIFFICULTY IN SUBMITTING THE ANSWER REMOVE THE EXPONENT TERM AND ENTER THE WHOLE NUMBER.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!--<script src="js/auth-status.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r92/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="js/save2.js"></script>
+  </body>
+</html>

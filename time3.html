@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/time2.css" />
+    <title>TimeMachine!</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <main class="d-flex justify-content-center align-items-center">
+        <div id="wrapper">
+          <div class="container mt-2 d-flex justify-content-center">
+            <h3 class="heading">Let's F U E L Our Time Machine Now!</h3>
+          </div>
+          <div class="container mb-1 d-flex justify-content-center">
+            <div class="jumbotron bg-darker col-lg-8 py-1">
+              <p class="question">
+                To fuel our Time Machine , we'll use Nuclear Energy. Twenty seven kgs of a
+                harmful radioactive isotope was released during the Chernobyl
+                Tragedy. I think that one will be perfect. Not the one
+                used to treat Thyroid. The other one , What is it?
+              </p>
+              <div class="form-group">
+                <label class="font-weight-bold text-white">Answer:</label>
+                <input type="text" id="answer" class="form-control" />
+                <button class="btn btn-dark btn-sm mt-2 save-button">
+                  Submit
+                </button>
+              </div>
+              <a href="#" data-toggle="modal" data-target="#exampleModal">How to submit answers </a> 
+              <p class="hint">Hint On Our LinkedIn Page <a href="https://www.linkedin.com/company/licetpattarai" target="_blank"><span class=" hint" >LICET PATTARAI </span></a> </p>
+              <big id="error" style="color: antiquewhite;"></big>
+            </div>
+          </div>
+          <div id="clock">
+            <div class="time hours">
+              <div class="column">
+                <div class="bit blank"></div>
+                <div class="bit blank"></div>
+                <div class="bit h5"></div>
+                <div class="bit h4"></div>
+              </div>
+              <div class="column">
+                <div class="bit h3"></div>
+                <div class="bit h2"></div>
+                <div class="bit h1"></div>
+                <div class="bit h0"></div>
+              </div>
+              <h2 class="display"></h2>
+            </div>
+  
+            <div class="time minutes">
+              <div class="column">
+                <div class="bit blank"></div>
+                <div class="bit m6"></div>
+                <div class="bit m5"></div>
+                <div class="bit m4"></div>
+              </div>
+              <div class="column">
+                <div class="bit m3"></div>
+                <div class="bit m2"></div>
+                <div class="bit m1"></div>
+                <div class="bit m0"></div>
+              </div>
+              <h2 class="display"></h2>
+            </div>
+  
+            <div class="time seconds">
+              <div class="column">
+                <div class="bit blank"></div>
+                <div class="bit s6"></div>
+                <div class="bit s5"></div>
+                <div class="bit s4"></div>
+              </div>
+              <div class="column">
+                <div class="bit s3"></div>
+                <div class="bit s2"></div>
+                <div class="bit s1"></div>
+                <div class="bit s0"></div>
+              </div>
+              <h2 class="display"></h2>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">How to submit answers!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            1) Chemical elements should begin with a capital letter. <br>
+            2) Symbols of chemical substance should be mentioned according to the naming convention. Example: Sodium is Na. <br>
+            3)While mentioning Isotope Number please use a hyphen or space.
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/time3.js"></script>
+    <script src="js/auth-status.js"></script>
+  </body>
+</html>

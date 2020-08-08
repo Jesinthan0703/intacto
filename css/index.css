@@ -1,0 +1,320 @@
+/* Parallax img */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #130d0a;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: Billion;
+  src: url(fonts/Billion.ttf);
+}
+@font-face {
+  font-family: bebas;
+  src: url(fonts/Bebas-Regular.ttf);
+}
+@font-face {
+  font-family: rale;
+  src: url(fonts/RALEWAY-MEDIUM.TTF);
+}
+
+#hero {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#content {
+  background-color: #130d0a;
+}
+
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+
+.first-section {
+  padding: 50px 0 20px 0;
+}
+
+.text-header {
+  font-size: 50px;
+  text-align: center;
+}
+
+h1 {
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #ede0d5;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+#hero,
+.layer {
+  min-height: 800px;
+}
+
+.layer-bg {
+  background-image: url("imgs/ilu_bg.jpg");
+}
+
+.layer-1 {
+  background-image: url("imgs/ilu_03.png");
+  background-position: left bottom;
+}
+
+.layer-2 {
+  background-image: url("imgs/ilu_02.png");
+}
+
+.layer-3 {
+  background-image: url("imgs/ilu_man.png");
+  background-position: right bottom;
+}
+
+.layer-4 {
+  background-image: url("imgs/ilu_01.png");
+}
+
+.layer-overlay {
+  background-image: url("imgs/ilu_overlay.png");
+}
+
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    display: none;
+  }
+
+  #hero-mobile {
+    display: block;
+  }
+}
+
+
+#scene {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  overflow: hidden;
+}
+
+/* form */
+.login-container {
+  position: fixed;
+  z-index: 500;
+  width: 370px;
+  height: 400px;
+  top: 50%;
+  left: 25%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.login-container h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: bebas;
+  color:rgb(63, 5, 5);
+}
+
+.login-container label {
+  display: block;
+  color: #a8a3a0;
+  font-family: rale;
+}
+
+.login-container div {
+  margin-bottom: 20px;
+}
+
+.login-container input[type="text"],
+input[type="password"] {
+  width: 100%;
+  border: none;
+  outline: none;
+
+  border-bottom: 1px solid #ffff;
+  background: transparent;
+  color: #ffff;
+  height: 40px;
+}
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+
+/* save button*/ 
+.save-button {
+  user-select: none;
+  margin: 0 3rem;
+  height: 50px;
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  padding: 0px 16px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: rgb(63, 5, 5);
+  transition: 0.2s cubic-bezier(0.16, 0.16, 0, 2);
+  transform: scale(1.02);
+}
+.save-button:hover {
+  transform: scale(1.01);
+}
+.save-button:active {
+  transform: scale(1);
+}
+.save-button .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2px;
+  justify-content: center;
+  text-align: center;
+  color: rgb(184, 153, 153);
+}
+.save-button .text span {
+  display: block;
+}
+.save-button .text span.no1 {
+  opacity: 1;
+  position: absolute;
+}
+.save-button .text span.no1.text-anim1 {
+  animation: text-anim1 1s ease-in-out forwards;
+}
+.save-button .text span.no1.text-anim1-rewind {
+  animation: text-anim1-rewind 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+.save-button .text span.no2 {
+  opacity: 0;
+  position: absolute;
+}
+.save-button .text span.no2.text-anim2 {
+  animation: text-anim2 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.save-button .text span.no3 {
+  opacity: 0;
+  position: absolute;
+}
+.save-button .text span.no3.text-anim3 {
+  animation: text-anim3 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+.save-button .text span.no3.text-anim3-rewind {
+  animation: text-anim3-rewind 0.5s ease-in-out forwards;
+}
+@keyframes text-anim1 {
+  0% {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px) translateZ(0);
+  }
+}
+@keyframes text-anim2 {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) translateZ(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px) translateZ(0);
+  }
+}
+@keyframes text-anim3 {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+}
+@keyframes text-anim3-rewind {
+  0% {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px) translateZ(0);
+  }
+}
+@keyframes text-anim1-rewind {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+}
+.save-button .loading-bar {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(151, 18, 18);
+  opacity: 0.8;
+  left: 0;
+  z-index: -1;
+}
+.save-button .loading-bar.loading-bar-anim {
+  animation: loading-bar-anim 3s ease-in-out;
+}
+.save-button .loading-bar.loading-bar-anim-rewind {
+  animation: loading-bar-anim-rewind 1s ease-in-out;
+}
+@keyframes loading-bar-anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes loading-bar-anim-rewind {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}

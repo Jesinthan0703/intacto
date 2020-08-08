@@ -1,0 +1,150 @@
+/* Answer box */
+.bg-darker {
+  background-color: #262421;
+  -webkit-box-shadow: 0px 0px 39px 11px rgba(71, 69, 71, 0.5);
+  -moz-box-shadow: 0px 0px 39px 11px rgba(71, 69, 71, 0.5);
+  box-shadow: 0px 0px 39px 11px rgba(71, 69, 71, 0.5);
+}
+@font-face {
+  font-family: Billion;
+  src: url(fonts/Billion.ttf);
+}
+@font-face {
+  font-family: graph;
+  src: url(fonts/GRAPHIC\ PLANT.otf);
+}
+@font-face {
+  font-family: digital;
+  src: url(fonts/digital-7.ttf);
+}
+@font-face {
+  font-family: rale;
+  src: url(fonts/RALEWAY-MEDIUM.TTF);
+}
+@font-face {
+  font-family: uli ;
+  src: url(fonts/Ultraquick\ Italic.ttf);
+}
+@font-face {
+  font-family: rale1;
+  src: url(fonts/RALEWAY-LIGHT.TTF);
+}
+
+.heading{
+  text-align: center;
+  text-shadow: cornsilk;
+  font-family: uli;
+  
+}
+
+.question {
+  font-family: digital;
+  font-size: 25px;
+  word-wrap: break-word;
+}
+
+.hint {
+  color: azure;
+  font-family: rale1;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+span.hint{
+  color: blue;
+}
+
+/* Clock */
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+
+* {
+  font-family: "Share Tech Mono", monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: #33ccff;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+footer {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+}
+
+footer,
+h2 {
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+#clock,
+.time {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+#clock {
+  width: 450px;
+  top: 2%;
+  margin: 0 auto;
+}
+
+.time.minutes {
+  left: 32px;
+}
+
+.time.seconds {
+  left: 64px;
+}
+
+.display {
+  position: absolute;
+  top: auto;
+  bottom: -32px;
+  left: 24px;
+  letter-spacing: 3.2rem;
+}
+
+.bit {
+  width: 48px;
+  height: 48px;
+  margin: 8px;
+  background: #33ccff;
+  box-shadow: 0 0 16px #33ccff;
+  transition: all 0.5s ease-out;
+}
+
+.bit.blank {
+  background: black;
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 320px) and (max-device-width: 768px) and (orientation: landscape) {
+  #clock {
+    top: 15%;
+  }
+}
+
+@media (min-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    
+    background: black;
+    color: #33ccff;
+  }
+}
